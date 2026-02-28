@@ -1,13 +1,35 @@
 .body, html{
     height: 100%;
-    margin: 0px;
+    
+
 
 }
+
+.body{
+    background-color: #FCDDD3;
+}
+
+* {
+  box-sizing: border-box;
+      cursor: url('heart__1_-removebg-preview.png')16 16, auto;
+
+}
+
 
 .titre_site{
     font-size:1.2rem ;
 
 }
+
+
+
+.contenu_article{
+    margin-top: 60px;
+    height: 30%;
+}
+
+
+
 
 .titre_site p{
     text-align: right;
@@ -16,7 +38,8 @@
 .nav{
     display: flex;
     width: 100%;
-    padding-bottom: 15px;
+    padding: 2%;
+
 }
 .nav_list{
     display: flex;
@@ -29,11 +52,12 @@
 .nav_list a {
     text-decoration: none;
     color: black;
+    background-color: #D8BFD8;
     list-style-type: none;
     font-size: 18px;
     border-radius: 0.5rem;
     cursor: pointer;
-    border: 8px solid #ffffff;
+    border: 8px solid #D8BFD8;
     transition: all 0.3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
@@ -63,11 +87,17 @@
     color: #f3f2f2;
 }
 
+.conteneur__principal{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .conteneur__principal__présentation{
     font-size: 40px;
     color: black;
     margin-top: 40px;
     margin-bottom: 30px;
+    padding: 15px;
 }
 
 .cartes{
@@ -102,12 +132,157 @@
     border-radius: 0.5rem;
 }
 
-.carousel-item img{
-    width: 60%;
-}
-
 .carousel-inner{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    gap : 4px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
+#carouselExample{
+    width: 25%;
+    margin: auto;
+    
+}
+
+
+
+.carousel-item img{
+    width: 80%;
+    height: auto;
+    border: 1px;
+    border-radius: 0.5rem;
+}
+
+.carousel-inner img{
+    position: static;
+}
+
+button{
+padding-right : 10px;
+    font-size: 12px;
+    padding: 1em 3.3em;
+    cursor: pointer;
+    transform: perspective(200px) rotate(0deg);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(
+    0deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 135, 252, 1) 100%
+  );
+     box-shadow: rgba(63, 94, 251, 0.2) 0px 40px 29px 0px;
+     will-change: transform;
+     transition: all 0.3s;
+     border-bottom: 2px solid rgba(70, 135, 252, 1);
+}
+
+button:hover{
+    transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+
+button:active{
+    transform: perspective(170px) rotateX(36deg) translateY(5px);
+}
+
+.img_presensation_paragraphe1{
+    opacity: 0;
+    display: none;
+}
+
+.img_presensation_paragraphe1.visible{
+    opacity: 1;
+    display: block;
+}
+
+.img_presensation_1{
+    width: 70%;
+}
+
+
+
+.contenu_article{
+    height: 5%;
+}
+
+.img.image_articles{
+    width: 70%;
+}
+
+
+.bouton_présentation{
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.h5{
+    margin: 0px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.card_presentation{
+    height: 18em;
+    width:14em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+
+}
+.card_image{
+    height: 6em;
+    width: 14em;
+    padding: 1em 2em;
+    top: 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('https://i.pinimg.com/1200x/8f/6f/aa/8f6faa550e5ba63395ccc51c39e8d986.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.card_presentation:hover .card_image{
+    height: 18px;
+}
+
+.hidden{
+    display: none;
+}
+
+.conteneur__carte{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conteneur__principal{
+    margin: 10px;
+}
+
+.article_titre{
+    margin-bottom: 40px;
+}

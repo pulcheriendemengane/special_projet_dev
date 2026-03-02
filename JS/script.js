@@ -68,5 +68,94 @@ bouton_concert.addEventListener("click", () =>{
         card.classList.add("hidden");
     }
     })
+      const viewport = document.querySelector(".liste__viewport");
+
+  // Si le slider n’existe pas sur la page → arrêter le script
+  if (!viewport) return;
+
+  /*
+    Initialisation du carousel Embla
+    Options :
+    - loop : désactive le défilement infini
+    - align : les slides commencent à gauche
+    - slidesToScroll : nombre de slides qui défilent par clic
+  */
+  const embla = EmblaCarousel(viewport, {
+    loop: false,
+    align: "start",
+    slidesToScroll: 1,
+  });
+
+  /*
+    Sélection des boutons navigation du slider
+  */
+  const prevBtn = document.querySelector(".embla__button--prev");
+  const nextBtn = document.querySelector(".embla__button--next");
+
+  /*
+    Sélection de la barre de progression du slider
+  */
+  const progressBar = document.querySelector(".liste__progress__bar");
+
+  /*
+    Met à jour l’état des boutons (actif / désactivé)
+    selon la position actuelle du carousel
+  */
+  const updateButtons = () => {
+    if (!embla) return;
+
+    prevBtn?.classList.toggle(
+      "liste__boutton--disabled",
+      !embla.canScrollPrev()
+    );
+
+    nextBtn?.classList.toggle(
+      "liste__boutton--disabled",
+      !embla.canScrollNext()
+    );
+  };
+
+  /*
+    Met à jour la barre de progression du slider.
+    La progression est calculée entre 0 et 1.
+  */
+  const updateProgress = () => {
+    if (!embla || !progressBar) return;
+
+    const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
+
+    progressBar.setAttribute(
+      "style",
+      `transform: translate3d(${progress * 100}%,0,0)`
+    );
+  };
+
+  /*
+    Gestion des clics sur les boutons navigation
+  */
+  prevBtn?.addEventListener("click", () => embla.scrollPrev());
+  nextBtn?.addEventListener("click", () => embla.scrollNext());
+
+  /*
+    Mise à jour automatique quand le carousel change d’état
+  */
+  embla.on("select", () => {
+    updateButtons();
+    updateProgress();
+  });
+
+  /*
+    Mise à jour si le carousel est réinitialisé (ex : resize fenêtre)
+  */
+  embla.on("reInit", updateButtons);
+
+  /*
+    Initialisation de l’état du slider
+  */
+  updateButtons();
+  updateProgress();
+
+
+});
     
-})
+

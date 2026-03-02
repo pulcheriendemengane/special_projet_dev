@@ -25,6 +25,20 @@ body {
 
 }
 
+.voir-tout {
+    text-decoration: none;
+    color: #dfc0d0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.voir-tout:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transform: translateX(5px);
+    display: inline-block;
+}
+
 
 .titre_site{
     font-size:1.4rem ;
@@ -246,6 +260,8 @@ body {
     transform: translateY(-12px) scale(1.05) rotate(0deg);
 }
 
+
+
 .img_presensation{
     margin-top: 110px;
     text-align: center;
@@ -456,6 +472,22 @@ button:active{
   box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 
 }
+
+.presentation_evenements_paragraphe{
+    font-size: 2.5rem; /* Ajuste la taille comme tu veux */
+    font-weight: bold; /* Optionnel : rend le texte plus visible */
+    margin-top: 80px;
+}
+
+.presentation_evenements{
+    margin-top: 50px;
+}
+
+.cartes__evenements{
+    margin-top: 30px;
+}
+
+
 .card_image{
     height: 6em;
     width: 14em;
@@ -488,9 +520,7 @@ button:active{
     margin: 10px;
 }
 
-.article_titre{
-    margin-bottom: 40px;
-}
+
 
 .liste {
   max-width: 48rem;
@@ -651,6 +681,50 @@ button:active{
     padding: 18px;
 }
 
+.article_sources{
+    margin-top: 70px;
+    padding: 30px;
+    border-top: 1px solid #eee;
+}
+
+.sources_title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Lien style média moderne */
+.source_link{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #2563eb;
+    padding-bottom: 4px;
+    transition: all 0.35s ease;
+}
+
+/* Barre animée sous le lien */
+.source_link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #2563eb;
+    transition: width 0.35s ease;
+}
+
+.source_link:hover{
+    color: #d2d7ea;
+}
+
+/* Animation hover */
+.source_link:hover::after{
+    width: 100%;
+}
+
 .categorie{
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -761,6 +835,17 @@ header:hover .titre_paragraphe{
         width: 100%;
     }
    
+   
+
+    .article_titre {
+        font-size: 1.8rem;
+    }
+
+    .paragraphe_article,
+    .paragraphe_article2 {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
     
 }
 
@@ -969,3 +1054,53 @@ textarea {
     transform: scale(1.05);
     box-shadow: 0 5px 20px rgba(255,118,140,0.4);
 }
+
+
+.article_titre{
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.paragraphe_article,
+.paragraphe_article2{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 28px;
+    text-align: justify;
+}
+
+
+
+/*Sous-titre*/
+.conteneur__principal h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 50px 0 25px;
+    color: #222;
+}
+
+.conteneur__principal iframe {
+    display: block;
+    margin: 40px auto;
+    border: none;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.conteneur__principal p {
+    letter-spacing: 0.2px;
+}
+
+
+.image {
+     display: block;
+    width: 40%;
+    margin: 35px auto;
+    border-radius: 16px;
+}
+

@@ -12,15 +12,49 @@
         "type": "concert",
         "nom": "Solidays",
         "tag": "concert",
-        "lien": "https://www.solidays.org/"
+        "lien": "https://www.solidays.org/",
+        "image":"img/solidays21_soso-manes_mathieu_fouchermatf450211.png"
     }
 ,
-     {
-        "type": "concert",
-        "nom": "Festival Spot",
-        "tag": "concert",
-        "lien": "https://www.bigcitynantes.fr/que-faire-a-nantes/festival-spot/"
-    }
+    {
+  "type": "concert",
+  "nom": "Festival Spot",
+  "tag": "concert",
+  "lien": "https://www.levoyageanantes.fr/evenements/spot/",
+  "image": "img/89d41e1ec410cc0550b28bad951fa05548df659f-_1_1.png"
+}
+],
 
-]
+
+
+"Genres de musiques": [
+    {
+      "type": "genre",
+      "nom": "Pop",
+      "tag": "pop",
+      "lien": "https://fr.wikipedia.org/wiki/Pop_(musique)",
+      "image": "img/pop-music.jpg"
+    },
+    {
+      "type": "genre",
+      "nom": "R&B / Soul",
+      "tag": "rnb",
+      "lien": "https://fr.wikipedia.org/wiki/Rhythm_and_blues",
+      "image": "img/rnb-music.jpg"
+    },
+    {
+      "type": "genre",
+      "nom": "Hip Hop / Rap",
+      "tag": "rap",
+      "lien": "https://fr.wikipedia.org/wiki/Hip-hop",
+      "image": "img/hiphop-music.jpg"
+    },
+    {
+      "type": "genre",
+      "nom": "Indie Pop",
+      "tag": "indie",
+      "lien": "https://fr.wikipedia.org/wiki/Pop_ind%C3%A9pendante",
+      "image": "img/indie-pop.jpg"
+    }
+  ]
 }

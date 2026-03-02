@@ -23,10 +23,16 @@ fetch("./data.json")
       .then(response => response.json())
       .then((data) => {
         data.Actualités.forEach((concert) =>{
-            //On crée le HTML (card)
-            const card = `<div class='card ${concert.type} hidden'> 
+        // On crée le HTML de la card avec image + titre
+          const card = `
+        <div class="card ${concert.type} hidden">
+
+            ${concert.image ? `<img src="${concert.image}" alt="${concert.nom}">` : ""}
+
             <h2>${concert.nom}</h2>
-            </div>`; 
+
+        </div>
+        `;
             //On ajoute notre card dans le HTML
             cards.insertAdjacentHTML("beforeend", card);
         });
@@ -156,6 +162,27 @@ bouton_concert.addEventListener("click", () =>{
   updateProgress();
 
 
+  /* ⭐ Recherche */
+  document.getElementById("searchForm")?.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let value = document.getElementById("searchInput").value
+      .toLowerCase()
+      .trim();
+
+    if(value === "actualité"){
+        window.location.href = "actualité.html";
+    }
+    else if(value === "contact"){
+        window.location.href = "contact.html";
+    }
+    else if(value === "communauté"){
+        window.location.href = "communauté.html";
+    }
+    else{
+        alert("Aucun résultat trouvé");
+    }
+  });
 });
     
 

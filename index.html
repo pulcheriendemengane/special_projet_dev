@@ -3,33 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="JS/script.js" defer></script>
     <title>Vivre de la musique</title>
 </head>
+
 <body>
-    <div class="conteneur__principal">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
         <nav class="nav">
             <p class="titre_site">
                 Vivre de la musique
             </p>
             <ul class="nav_list">
-                <a href=""><li class="nav_item">Accueil</li></a>
-                <a href=""><li class="nav_item">Communauté</li></a>
-                <a href=""><li class="nav_item">Recommendation</li></a>
-                <a href=""><li class="nav_item">Actualités</li></a>
-                <a href=""><li class="nav_item">Communauté</li></a>
-            </ul>
+                <a href="index.html"><li class="nav_item">Accueil</li></a>
+                <a href="communauté.html"><li class="nav_item">Communauté</li></a>
+                <a href="articles.html"><li class="nav_item">Articles</li></a>
+                <a href="actualité.html"><li class="nav_item">Actualités</li></a>
+                <a href="templates/contact.html"><li class="nav_item">Contact</li></a>
+
+                
+        </ul>
+    
         </nav>
+
+        <div class="conteneur_separateur"></div>
 
         <header class="header_principale">
             <h1 class="h1_principal">Vivre de la musique</h1>
             <p class="header_paragraphe">Pour les passionnés de musique</p>
        </header>
 
+        <div class="conteneur__principal">
        <main class="contenu_principal">
-        <h2 class="conteneur__principal__présentation">Articles</h2>
+
+         <div class="article_main">
+            <div class="article_header">
+            <h4>Présentations d'articles</h4>
+            <div>
+                    <p>
+                        <a href="articles.html" class="voir-tout">Voir tout -></a>
+                    </p>
+                    
+            </div>
+                <div class="liste">
+                <div class="liste__viewport">
+                    <div class="liste__contenu">
+
+                    <div class="liste__slide">
+                    <div class="contenu_article">
+                    <span class="contenu_article__lien">
+                        <a href="sza.html">
+                        <img class="image_articles" src="img/SOS-Lana-Edition-Deluxe.jpg">
+                        </a>
+                    </span>
+                    <h4 class="contenu_présentation"></h4>
+                    <p>Album R&B moderne mêlant émotion, trap et production atmosphérique.</p>
+                    </div>
+                </div>
+
+                <div class="liste__slide">
+                    <div class="contenu_article">
+                    <span class="contenu_article__lien">
+                        <a href="nemzz.html">
+                                <img class="image_articles" src="img/Nemzzz.jpg">
+                        </a>
+                    </span>
+                    <h4 class="contenu_présentation"></h4>
+                    <p>Album rap britannique moderne avec des sonorités drill et mélancoliques.</p>
+
+                
+                </div>
+                </div>
+
+               
+                </div>
+                </div>
+                
+
+                <div class="liste__controle">
+    
+  </div>
+</div>
+
+                <h2 class="conteneur__principal__présentation reveal">Albums (Cliquer sur les photos pour les liens 😉)</h2>
+
         <div class="cartes">
-            <div class="carte">
-                <img src="img/Today in 1992, Sade released their classic 4th….jpg">
+            <div class="carte reveal">
+                <a href="https://www.cultura.com/p-love-deluxe-10597937.html">
+                                    <img src="img/Today in 1992, Sade released their classic 4th….jpg">
+                </a>
                 <div class="contenu_article">
                     <span class="contenu_article__lien"><a href=""></a></span>
                     <h4 class="contenu_présentation"><b>
@@ -39,8 +104,10 @@
                 </div>
             </div>
 
-             <div class="carte">
-                <img src="">
+             <div class="carte reveal">
+                <a href="https://www.fnac.com/a19023649/Kate-Bush-Hounds-Of-Love-Vinyle-album">
+                                    <img src="img/Running Up That Hill (A Deal With God).jpg">
+                </a>
                 <div class="contenu_article">
                     <span class="contenu_article__lien"><a href=""></a></span>
                     <h4 class="contenu_présentation"><b>
@@ -50,8 +117,11 @@
                 </div>
             </div>
 
-             <div class="carte">
-                <img src="">
+
+             <div class="carte reveal">
+                <a href="https://www.cultura.com/p-thriller-0888751437319.html">
+                                    <img src="img/Michael Jackson - Thriller.jpg">
+                </a>
                 <div class="contenu_article">
                     <span class="contenu_article__lien"><a href=""></a></span>
                     <h4 class="contenu_présentation"><b>
@@ -61,8 +131,10 @@
                 </div>
             </div>
 
-             <div class="carte">
-                <img src="">
+             <div class="carte reveal">
+                <a href="https://www.cultura.com/p-loud-0602557079807.html">
+                        <img src="img/Rihanna - Loud - Double vinyle.jpg">
+                </a>
                 <div class="contenu_article">
                     <span class="contenu_article__lien"><a href=""></a></span>
                     <h4 class="contenu_présentation"><b>
@@ -72,8 +144,11 @@
                 </div>
             </div>
 
-             <div class="carte">
-                <img src="">
+             <div class="carte reveal">
+                <a href="https://www.cultura.com/p-back-to-black-0602517341289.html">
+                    <img src="img/Amy Winehouse - Back to Black.jpg">
+
+                </a>
                 <div class="contenu_article">
                     <span class="contenu_article__lien"><a href=""></a></span>
                     <h4 class="contenu_présentation"><b>
@@ -83,9 +158,12 @@
                 </div>
             </div>
 
-             <div class="carte">
-                <img src="img/SZA-Ctrl.jpg">
+             <div class="carte reveal">
+                <a href="https://www.cultura.com/p-ctrl-0889854491925.html">
+        <img src="img/SZA-Ctrl.jpg" alt="SZA Ctrl">
+            </a>
                 <div class="contenu_article">
+
                     <span class="contenu_article__lien"><a href=""></a></span>
                     <h4 class="contenu_présentation"><b>
                         <a href=""></a>
@@ -94,41 +172,208 @@
                 </div>
             </div>
 
+
+
+</div>
         </div>
+
+        
+      
+        <section id="slider" class= "reveal">
+            <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.fnac.com/a21553739/A-AP-Rocky-Long-Live-Asap-Edition-Deluxe-Vinyle-Colore-Vinyle-album">
+              <img src="img/A$AP Rocky- LiveLoveA.jpg" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.cultura.com/p-currents-0602547306777.html">
+              <img src="img/Tame Impala - Currents (2015).jpg" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.cultura.com/p-evanescence-fallen-0601501306327.html">
+              <img src="img/evanescence fallen.jpg" class="d-block w-100" alt="...">
+      </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </section>
+
+       
 
         <div class="img_presensation">
             <h2 class="img_presensation_titre1">Présentation d'artistes (la semaine)</h2>
 
             <div class="img_presensation_1">
-                <img src="">
-                <p class="img_presensation_paragraphe1"></p>
+                <img src="img/Chenayder.jpg">
+                <p class="img_presensation_paragraphe1">Chenayder est un talent rare. Le natif d’Orlando chante comme quelqu’un né dans la Renaissance de Harlem mais se sent comme une superstar contemporaine. Elle-même qualifie sa musique de « vintage », et n’a pas peur d’élargir son catalogue.</p>
             </div>
+            <button class="bouton_présentation">Présentation</button>
 
              <div class="img_presensation_1">
-                <img src="">
-                <p class="img_presensation_paragraphe1"></p>
+                <img src="img/Nemzzz - Alisson Gabriel (1).jpg">
+                <p class="img_presensation_paragraphe1">Nemzzz est un jeune rappeur britannique originaire de Manchester. Il s’est fait connaître grâce à ses titres viraux sur les réseaux sociaux. Sa musique mélange rap UK, drill mélodique et introspection. En 2024, il sort la mixtape Do Not Disturb (Deluxe). Il est aujourd’hui considéré comme une nouvelle révélation du rap britannique.</p>
             </div>
+            <button class="bouton_présentation">Présentation</button>
 
-        <div class="article_main">
-            <img src="img/SZA-Ctrl.jpg">
-                <div class="contenu_article">
-                    <span class="contenu_article__lien"><a href=""></a></span>
-                    <h4 class="contenu_présentation"><b>
-                        <a href=""></a>
-                    </b></h4>
-                    <p></p>
-                </div>
+
+  
+
+        
 
         </div>
+
+        <div class="presentation_evenements">
+                                    <p class="presentation_evenements_paragraphe">Evènements</p>
         </div>
+        <section class="cartes__evenements">
+        <div class="carte__evenements">
+            <img src="img/jazz-a-la-villette-paris-france.jpg">
+            <h5 class="carte__principal__presentation">Jazz Festival</h5>
+            <h2 class="carte__principal__presentation2">Jazz à La Villette</h2>
+
+            <div class="contenu_article">
+                <span class="contenu_article_lien1">
+                                    <a href="https://www.jazzalavillette.com/fr/billetterie" target="_blank">Billetterie</a>
+                </span>
+                <h4 class="contenu_presentation">
+                    <b>221 avenue Jean-Jaurès, 75019 Paris</b>
+            </h4>
+
+            <p>Dates disponibles sur le site officiel</p>
+            </div>
+        </div>
+
+         <div class="carte__evenements">
+        <img src="img/Capture-decran-2023-05-19-a-14.34-1-3-29-628x400.jpg">
+
+        <h5 class="carte__principal__presentation">Concert</h5>
+        <h2 class="carte__principal__présentation2">Aya Nakamura – Stade de France</h2>
+
+        <div class="contenu_article">
+            <span class="contenu_article__lien1">
+                <a href="https://www.ticketmaster.fr/fr/artiste/aya-nakamura/idartiste/8933" target="_blank">
+                    Billetterie
+                </a>
+            </span>
+
+            <h4 class="contenu_presentation">
+                <b>29, 30 et 31 Mai 2026 - Stade de France, Saint-Denis</b>
+            </h4>
+        </div>
+    </div>
+
+       <div class="carte__evenements">
+        <img src="img/c8668865-b211-460b-805e-2aaabcda2a5b_iwy4vw.avif">
+
+        <h5 class="carte__principal__presentation">Afro Show</h5>
+        <h2 class="carte__principal__presentation2">Afro Summer Show</h2>
+
+        <div class="contenu_article">
+            <span class="contenu_article__lien1">
+                <a href="https://shotgun.live/fr/festivals/afrosummer-show-2" target="_blank">
+                    Réserver
+                </a>
+            </span>
+
+            <h4 class="contenu_presentation">
+                <b>2 Mai 2026, Nantes – Tks 2g - Fallon - Kamelon</b>
+            </h4>
+        </div>
+    </div>
+
+<div class="carte__evenements">
+        <img src="img/30b4d70_1726484592749-maxnewsspecial948984.avif">
+
+        <h5 class="carte__principal__presentation">Festival</h5>
+        <h2 class="carte__principal__presentation2">Golden Coast Festival</h2>
+
+        <div class="contenu_article">
+            <span class="contenu_article__lien1">
+                <a href="https://goldencoastfestival.com/billetterie/" target="_blank">
+                    Billets
+                </a>
+            </span>
+
+            <h4 class="contenu_presentation">
+                <b>28, 29 et 30 août — Corcelles-les-Monts, France</b>
+            </h4>
+        </div>
+    </div>
+
+    <div class="carte__evenements">
+        <img src="img/34392466_1950108405002084_2437480213488074752_o.jpg">
+
+        <h5 class="carte__principal__presentation">Eco Festival</h5>
+        <h2 class="carte__principal__presentation2">We Love Green 2026</h2>
+
+        <div class="contenu_article">
+            <span class="contenu_article__lien1">
+                <a href="https://shotgun.live/fr/festivals/we-love-green-2026" target="_blank">
+                    Réserver
+                </a>
+            </span>
+
+            <h4 class="contenu_presentation">
+                <b>5 et 7 Juin 2026 — Route de la Pyramide, Paris</b>
+            </h4>
+        </div>
+    </div>
+
+    <div class="carte__evenements">
+        <img src="img/concert-2527495_1280-e1683997537351.jpg">
+
+        <h5 class="carte__principal__presentation">Festival</h5>
+        <h2 class="carte__principal__presentation2">Festival de Trélazé</h2>
+
+        <div class="contenu_article">
+            <span class="contenu_article__lien1">
+                <a href="https://www.trelaze.fr/ville-durable/festival-de-trelaze" target="_blank">
+                    Infos
+                </a>
+            </span>
+
+            <h4 class="contenu_presentation">
+                <b>Trélazé, France</b>
+            </h4>
+                            <h6>Avec une prestation du groupe Kassav</h6>
+        </div>
+    </div>
+</div>
+</section>
+    
+        
        </main>
     </div>
 
-    <footer class="pied_page">
-        <h2>À propos</h2>
-        <h3></h3>
-        <h4></h4>
+     <footer class="pied_page">
+        <div class="footer__container">
+            <div class="footer__bloc">
+                <h2>À propos</h2>
+            <p>Site d'articles musicaux pour les fans de musiques ou même pour ceux qui veulent plus découvrir sur le monde de la musique, Découvrez les tendances, artistes et styles qui façonnent la musique actuelle.</p>
+        </div>
+        <div class="footer_bloc">
+            <h3>Contact</h3>
+            Email : <a href="mailto:contact@site.com">contact@site.com</a>
+        </div>
+
+       
+        <div class="footer__bas">
+            <p>© 2026 - Tous droits réservés</p>
+       </div>
+       </div>
     </footer>
 </body>
+
 </html>
 

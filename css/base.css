@@ -1288,12 +1288,13 @@ textarea {
 .links a{
     text-decoration: none;
     font-size: 14px; /* taille plus petite */
-    color: white;
+    color: rgb(239, 224, 224);
     font-weight: bold;
     background: rgba(0,0,0,0.5);
     padding: 4px 8px; /* réduit l’espace autour du texte */
     border-radius: 6px;
     transition: 0.3s;
+    
 }
 
 .links a:hover{

@@ -162,27 +162,7 @@ bouton_concert.addEventListener("click", () =>{
   updateProgress();
 
 
-  /* ⭐ Recherche */
-  document.getElementById("searchForm")?.addEventListener("submit", function(e){
-    e.preventDefault();
-
-    let value = document.getElementById("searchInput").value
-      .toLowerCase()
-      .trim();
-
-    if(value === "actualité"){
-        window.location.href = "actualité.html";
-    }
-    else if(value === "contact"){
-        window.location.href = "contact.html";
-    }
-    else if(value === "communauté"){
-        window.location.href = "communauté.html";
-    }
-    else{
-        alert("Aucun résultat trouvé");
-    }
-  });
+  
 });
     
 

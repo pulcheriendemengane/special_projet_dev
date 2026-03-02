@@ -44,8 +44,8 @@ def contact():
     msg['Subject'] = 'Nouveau message depuis le site'
 
     # Adresse expéditeur et destinataire
-    msg['From'] = 'ton.email@gmail.com'
-    msg['To'] = 'ton.email@gmail.com'
+    msg['From'] = 'pulcheriendemengane@gmail.com'
+    msg['To'] = 'pulcheriendemengane@gmail.com'
 
     # Ajout du contenu HTML dans le mail
     msg.add_alternative(html_content, subtype='html')

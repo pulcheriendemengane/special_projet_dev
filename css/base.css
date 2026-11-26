@@ -591,6 +591,8 @@ button:active{
 }
 
 .h1__titre{
+    margin-top: 60px;
+    margin-bottom: 50px;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -598,7 +600,7 @@ button:active{
 
 .titre_paragraphe{
     color: #6b7280;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     text-align: center;
     transition: 0.35s ease;
 
@@ -715,6 +717,7 @@ line-height: 1.4;
 }
 
 .pied_page{
+    position: sticky;
     margin-top: 60px;
     background: linear-gradient(135deg, #fafafa, #e2e8f0);
     color:#111827;
@@ -724,6 +727,7 @@ line-height: 1.4;
 }
 
 .footer__container{
+    position:sticky;
     width: 90%;
     margin: auto;
     display: grid;
